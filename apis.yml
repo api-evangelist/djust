@@ -1,7 +1,27 @@
 aid: djust
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/djust.png
 name: Djust
-description: Djust is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  DJUST is a French all-in-one, modular B2B commerce platform that helps
+  distributors, wholesalers, manufacturers and retailers launch and automate
+  their B2B eCommerce and eProcurement operations. The platform covers automated
+  order management (24/7 online ordering), AI-assisted quoting with automatic
+  pricing and discounts, integrated online payments with deadline tracking, a
+  conversational AI sales assistant, real-time sales analytics, and prebuilt
+  ERP/CRM integrations. Customers include Eiffage, Auchan Retail and Lesaffre;
+  DJUST reports EUR 1.5B GMV and 2M orders processed in 2025. Backed by
+  Speedinvest.
 url: https://raw.githubusercontent.com/api-evangelist/djust/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- B2B
+- eCommerce
+- eProcurement
+- Commerce
+- Payments
+- Order Management
+- ERP Integration
+- Retail
+- France
 apis: []
+common:
+- type: DomainSecurity
+  url: security/djust-domain-security.yml
+- type: Website
+  url: https://djust.io/
+- type: Pricing
+  url: https://djust.io/pricing
+- type: Blog
+  url: https://djust.io/blog
+- type: TermsOfService
+  url: https://djust.io/legal-mentions
+- type: Support
+  url: https://djust.io/contact
+- type: SignUp
+  url: https://djust.io/request-demo
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
